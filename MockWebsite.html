@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Playstation 5 Purchase Sheet</title>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <script src="form.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <h1>Tech for Sale</h1>
+    <h2>***Fake website for school assignment***</h2>
+    <p>Pre ordering for Playstation 5 and Playstation 5 accessories</p>
+    <form name="orderForm" action="http://mscs-php.uwstout.edu/2022FA/CS/248/001/spinksk9295/Assignment8/ordersummary.php" method="post">
+    <table>
+      <tr>
+        <td><img src="images/ps5.jpeg" alt="PS5 console image"></td>
+        <td>
+          Playstation 5 console</br> 
+          Price: $500</br>
+          <label for="console">Add to Cart: </label>
+          <input type="Checkbox" name="items[console]" value = "500" id="console"></input>
+        </td>
+  
+        <td><img src="images/whitecontroller.jpeg" alt="White PS5 controller image"></td>
+        <td>
+          Playstation 5 controller (White)</br> 
+          Price: $70</br>
+          <label for="white_controller">Add to Cart: </label>
+          <input type="Checkbox" name="items[white_controller]" value = "70" id="white_controller"></input>
+        </td>
+      </tr>
+  
+        <td><img src="images/blackcontroller.jpeg" alt="Black PS5 controller image"></td>
+        <td>
+          Playstation 5 controller (Black)</br> 
+          Price: $70</br>
+          <label for="black_ontroller">Add to Cart: </label>
+          <input type="Checkbox" name="items[black_controller]" value = "70" id="Black PS5 controller"> </input>
+  
+          <td><img src="images/headset.jpeg" alt="PS5 Pulse headset image"></td>
+        <td>
+          Playstation 5 Pulse headset</br> 
+          Price: $100</br>
+          <label for="headset">Add to Cart: </label>
+          <input type="Checkbox" name="items[headset]" value = "100" id="headset"></input>
+        </td>
+  
+      </tr>
+    </table>
+      <fieldset>
+        <legend>Order </legend>
+  
+        <label class="heading" for= "firstname" id="fnamelabel"> First Name:</label>
+        <input type="text" name="firstname" id="firstname" /></br>
+  
+        <label class="heading" for= "lastname" id="lnamelabel"> Last Name:</label>
+        <input type="text" name="lastname" id="lastname" /></br>
+  
+        <label class="heading" for= "street" id="streetlabel"> Street:</label>
+        <input type="text" name="street" id="street" size="25" /></br>
+  
+        <label class="heading" for= "city" id="citylabel"> City:</label>
+        <input type="text" name="city" id="city" size="40" /></br>
+  
+        <label class="heading" for= "state"> State:</label>
+        <input type="text" name="state" id="state" size="2" /></br>
+  
+        <label class="heading" for= "zip"> Zip:</label>
+        <input type="text" name="zip" id="zip" size="5" /></br>
+  
+        <label class="heading">Credit Card:</label>
+        <label><input type="radio" name="credit" value="mc" />Mastercard</label>
+        <label><input type="radio" name="credit" value="visa" />Visa</label>
+        <label><input type="radio" name="credit" value="amex" />American Express</label>
+  
+        </fieldset>	
+      <button type="button" onClick="submitForm()">Place Order</button>
+    </form>
+  </body>
+
+
+</html>
